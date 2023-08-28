@@ -1,0 +1,28 @@
+@import "../../App.scss";
+
+@mixin header($theme:$light){
+    height: 60px;
+    width: 100%;
+    color: $text-blue;
+    background-color: $theme;
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header-dark{
+    @include header($theme:$dark);
+}
+
+.header-light{
+    @include header($theme:$light);
+}
+
+.header-colorful{
+    @include header($theme:$colorful-voilet);
+}
+
+h1{
+    margin: auto 25px;
+}
