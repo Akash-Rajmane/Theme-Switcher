@@ -8,10 +8,10 @@ import Dropdown from './components/dropdown/Dropdown';
 export const ThemeContext = createContext(null);
 
 function App() {
-  const [theme, setTheme] = useState("light");
+ const [theme, setTheme] = useState("light");
   
   return (
-  <ThemeContext.Provider value={theme}>
+ <ThemeContext.Provider value={theme}>
     <Header/>
     <Content/>
     <Dropdown
@@ -20,7 +20,7 @@ function App() {
         setSelected={setTheme}
       />
     <Footer/>
-  </ThemeContext.Provider>
+</ThemeContext.Provider>
   );
 }
 

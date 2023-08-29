@@ -13,8 +13,9 @@ const Dropdown = ({
     ? "dropDownContentOverlay"
     : "dropDownContentHidden";
 
+
   return (
-    <div>
+    <div className={"dropdown"}>
       <div className={"dropDownContainer"}>
         <div className={"dropDownBox"}  onClick={(e) => {
               !selected && setIsAcive(!isActive);

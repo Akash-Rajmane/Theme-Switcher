@@ -2,7 +2,7 @@
 
 @mixin content($theme:$light){
     display: block;
-    margin: 100px auto;
+    margin: 90px auto 30px auto;
     width: 80%;
     color: $text-blue;
     border-radius: 8px;
